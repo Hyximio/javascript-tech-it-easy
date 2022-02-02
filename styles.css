@@ -1,0 +1,56 @@
+
+* {
+    box-sizing: border-box;
+    max-width: 1000px;
+    margin: auto;
+}
+
+body {
+    font-family: "Lucida Grande", sans-serif;
+    background-color: hsl(74, 20%, 93%);
+}
+
+.top{
+    margin:20px;
+}
+section {
+    margin: 10px;
+    white-space: pre-wrap;
+}
+
+#total-sold {
+    color: hsl(113, 50%, 50%);
+}
+
+#bought-tvs {
+    color: hsl(250, 50%, 50%);
+}
+
+.list {
+    margin:20px;
+}
+
+#tv-content {
+    border: 1px solid hsl(63, 56%, 10%);
+    border-radius: 10px;
+    background-color: hsl(10, 20%, 90%);
+    margin-bottom: 50px;
+}
+
+.sorted-item {
+    border: 1px solid hsl(63, 56%, 10%);
+    border-radius: 0px;
+    padding: 10px;
+    margin: 0;
+    background-color: hsl(74, 0%, 85%);
+}
+
+#sort-txt {
+    margin:10px;
+}
+button {
+    width:200px;
+    height:50px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+}
