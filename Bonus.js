@@ -26,13 +26,9 @@ bt_price.addEventListener('click', () => {
 const bt_ambiLight = document.getElementById('sort-ambilight');
 bt_ambiLight.addEventListener( 'click', () => {
 
-    inventory.sort(function(a, b) {
-        const aTxt = a.brand.toLowerCase();
-        const bTxt = b.brand.toLowerCase();
-        return (aTxt < bTxt) ? 1 : (aTxt > bTxt) ? -1 : 0;
-    });
-
-    inventory.sort( ( a, b) => b.options.ambiLight ? 1 : -1);
+    // First order by brand to avoid random order between similar ambiLight values
+    inventory.sort( (a, b) => a.brand.toLowerCase() > b.brand.toLowerCase() ? -1 : 1 );
+    inventory.sort( (a, b) => b.options.ambiLight ? 1 : -1);
 
     refreshList( "tv-content-all");
 });
